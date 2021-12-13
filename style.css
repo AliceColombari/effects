@@ -9,7 +9,19 @@
     height: 100px;
     background-color: red;
     position: absolute;
-    animation: muoviti 10s ease;
+    animation: muoviti 10s ease 0s 1;
+    /* animation: nome durata tipologia ritardo ripetizione */
+}
+
+ /* al click sul quadrato cambia le dimensioni */
+.quadrato:active{
+    width: 200px;
+    height: 200px;
+}
+
+/* al passaggio del mouse sul quadrato cambia il colore */
+.quadrato:hover{
+    background-color: coral;
 }
 
 @keyframes muoviti {
@@ -17,25 +29,30 @@
     0% {
         left: 0;
         top: 0;
+        background-color: red;
     }
 
     20% {
         top: 0;
         left: calc(100% - 100px);
+        background-color: blue;
     }
 
     40% {
         top: calc(100% - 100px);
         left: calc(100% - 100px);
+        background-color: yellow;
     }
 
     60% {
         top: calc(100% - 100px);
         left: 0;
+        background-color: green;
     }
 
     80% {
         top: 0;
         left: 0;
+        background-color: red;
     }
 }
