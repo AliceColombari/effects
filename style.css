@@ -24,32 +24,38 @@
     background-color: coral;
 }
 
+ /* settaggio dei vari movimenti del quadrato nella pagina */
 @keyframes muoviti {
     
+    /* posizione di partenza estremo sinistro in alto */
     0% {
         left: 0;
         top: 0;
         background-color: red;
     }
 
+    /* posizione estremo destro in alto */
     20% {
         top: 0;
         left: calc(100% - 100px);
         background-color: blue;
     }
 
+    /* posizione estremo destro in basso */
     40% {
         top: calc(100% - 100px);
         left: calc(100% - 100px);
         background-color: yellow;
     }
 
+     /* posizione estremo sinistro in basso */
     60% {
         top: calc(100% - 100px);
         left: 0;
         background-color: green;
     }
 
+    /* ritorno alla posizione di partenza estremo sinistro in alto */
     80% {
         top: 0;
         left: 0;
