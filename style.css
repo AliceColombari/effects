@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quadrato{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation: mouviti 10s ease;
+}
+
+@keyframes muoviti {
+    
+    0%{
+        left: 0;
+        top: 0;
+    }
+
+    20%{
+        left: calc(100% - 100px);
+        top: 0;
+    }
+
+    40%{
+        left: calc(100% - 100px);
+        top: calc(100% - 100px);
+    }
+
+    60%{
+        left: 0;
+        top: calc(100% - 100px);
+    }
+
+    80%{
+        left: 0;
+        top: 0;
+    }
+}
