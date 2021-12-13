@@ -9,33 +9,33 @@
     height: 100px;
     background-color: red;
     position: absolute;
-    animation: mouviti 10s ease;
+    animation: muoviti 10s ease;
 }
 
 @keyframes muoviti {
     
-    0%{
+    0% {
         left: 0;
         top: 0;
     }
 
-    20%{
+    20% {
+        top: 0;
         left: calc(100% - 100px);
-        top: 0;
     }
 
-    40%{
+    40% {
+        top: calc(100% - 100px);
         left: calc(100% - 100px);
-        top: calc(100% - 100px);
     }
 
-    60%{
-        left: 0;
+    60% {
         top: calc(100% - 100px);
+        left: 0;
     }
 
-    80%{
-        left: 0;
+    80% {
         top: 0;
+        left: 0;
     }
 }
